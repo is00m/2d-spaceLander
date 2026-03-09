@@ -12,6 +12,7 @@ public class Lander : MonoBehaviour
 
     private Rigidbody2D landerRigidbody2D;
     private float fuelAmount = 10f;
+    [SerializeField] private float coinAmount = 0;
 
     private void Awake()
     {
@@ -97,11 +98,20 @@ public class Lander : MonoBehaviour
             float addFuelAmount = 10f;
             fuelAmount += addFuelAmount;
             fuelPickup.DestroySelf();
+            Debug.Log("Fuel Amount:" + fuelAmount);
         }
+        if(collision2d.gameObject.TryGetComponent(out CoinPickup coinPickup))
+        {
+            float addCoinAmount = 5f;
+            coinAmount += addCoinAmount;
+            coinPickup.DestroySelf();
+            Debug.Log("Coin Amount:" + coinAmount);
+        }
+        
     }
     private void ConsumeFuel()
     {
         float fuelConsumptionAmount = 1f;
-        fuelAmount -= fuelConsumptionAmount * Time.deltaTime; 
+        fuelAmount -= fuelConsumptionAmount * Time.deltaTime;
     }
 }

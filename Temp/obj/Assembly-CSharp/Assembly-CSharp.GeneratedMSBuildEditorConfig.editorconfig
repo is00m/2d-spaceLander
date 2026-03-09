@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = 
-build_property.ProjectDir = C:\Users\iscik\Documents\UnityGames\2d-cm\
+build_property.ProjectDir = /Users/iso/Documents/UnityProjects/2d-spaceLander/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
