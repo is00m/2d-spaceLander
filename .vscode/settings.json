@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "2d-spaceLander.slnx"
+    "dotnet.defaultSolution": "2d-cm.slnx"
 }

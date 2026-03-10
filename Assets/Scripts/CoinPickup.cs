@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class CoinPickup : MonoBehaviour
-{
-    public void DestroySelf()
-    {
+public class CoinPickup : MonoBehaviour {
+    public void DestroySelf() {
         Destroy(gameObject);
     }
 }
